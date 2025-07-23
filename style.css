@@ -60,12 +60,15 @@ article{
    padding: .7rem;
    border-radius: 100%;
    z-index: 3;
- }
- .share-main{
    color: var(--desaturated-dark-blue);
    background-color: var(--light-grayish-blue);
+   cursor: pointer;
+   transition: all .3s ease;
  }
- .share-second{
+ .share:active{
+   transform: scale(.9);
+ }
+ .share.active{
    color: var(--light-grayish-blue);
    background-color: var(--desaturated-dark-blue);
  }
@@ -113,6 +116,24 @@ p{
    background-color: var(--very-dark-grayish-blue);
    width: 100%;
    height: 67px;
-   bottom: 0px;
+   bottom: -80px;
+   gap: 1.25rem;
    z-index: 2;
+   transition: bottom .3s ease;
 }
+#content-display.visible{
+   bottom: 0px;
+}
+#content-display span{
+   letter-spacing: 6px;
+   margin-left: 2rem;
+   color: var(--grayish-blue);
+}
+.icons{
+   display: flex;
+   gap: 1.5rem;
+}
+.icons img{
+   cursor: pointer;
+}
+
