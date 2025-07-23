@@ -22,13 +22,15 @@ main{
     padding: 0rem 1rem;
 }
 article{
+   position: relative;
     display: flex;
     flex-direction: column;
     background-color: white;
     color: black;
-    border-radius: 6px;
+    border-radius: 12px;
     max-width: 310px;
     box-shadow: 12px 12px 50px rgba(0, 0, 0, 0.196);
+    overflow: hidden;
 }
  figure{
     width: 100%;
@@ -38,13 +40,12 @@ article{
  }
  figure img{
     width: 100%;
-    border-radius: 6px;
  }
  .padding-style{
     display: flex;
     flex-direction: column;
-    gap: 2rem;
-    padding: 1.5rem 2.2rem;
+    gap: 1.7rem;
+    padding: 1rem 2.2rem;
  }
  .img-user{
     width: 40px;
@@ -56,10 +57,17 @@ article{
     object-fit: fill;
  }
  .share{
-   color: var(--desaturated-dark-blue);
-   background-color: var(--light-grayish-blue);
    padding: .7rem;
    border-radius: 100%;
+   z-index: 3;
+ }
+ .share-main{
+   color: var(--desaturated-dark-blue);
+   background-color: var(--light-grayish-blue);
+ }
+ .share-second{
+   color: var(--light-grayish-blue);
+   background-color: var(--desaturated-dark-blue);
  }
  .avatar-container{
     display: flex;
@@ -76,21 +84,35 @@ article{
    gap: .2rem;
 }
 h1{
-   font-size: 1.2rem;
-   max-width: 18rem;
+   font-size: 1.13rem;
    color: var(--very-dark-grayish-blue);
    font-weight: 700;
+   letter-spacing: 1px;
 }
 p{
-   color: var(--very-dark-grayish-blue);
+   color: var(--desaturated-dark-blue);
    font-weight: 500;
-   max-width: 26rem;
+   max-width: 20rem;
 }
 .name-span{
    font-weight: 700;
    color: var(--very-dark-grayish-blue);
+   letter-spacing: 1px;
 }
 .date-span{
+   letter-spacing: 1px;
    font-weight: 500;
-   color: var(--very-dark-grayish-blue);
+   color: var(--desaturated-dark-blue);
+}
+
+#content-display{
+   position: absolute;
+   display: flex;
+   align-items: center;
+   color: white;
+   background-color: var(--very-dark-grayish-blue);
+   width: 100%;
+   height: 67px;
+   bottom: 0px;
+   z-index: 2;
 }
