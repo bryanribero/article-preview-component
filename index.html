@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
-
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <title>Frontend Mentor | Article preview component</title>
@@ -25,14 +25,16 @@
 
       </div>
       <div class="avatar-container">
-        <img src="images/avatar-michelle.jpg" class="img-user" alt="avatar image">
         <div class="name-container">
-          <span class="name-span">Michelle Appleton</span>
-          <span class="date-span">28 Jun 2020</span>
+          <img src="images/avatar-michelle.jpg" class="img-user" alt="avatar image">
+          <div class="span-container">
+            <span class="name-span">Michelle Appleton</span>
+            <span class="date-span">28 Jun 2020</span>
+          </div>
         </div>
-        <div class="share">
-            <img src="images/icon-share.svg" class="icon-img" alt="icon share">
-        </div>
+          <svg xmlns="http://www.w3.org/2000/svg" class="share" width="15" height="13">
+              <path fill="currentColor" d="M15 6.495L8.766.014V3.88H7.441C3.33 3.88 0 7.039 0 10.936v2.049l.589-.612C2.59 10.294 5.422 9.11 8.39 9.11h.375v3.867L15 6.495z"/>
+          </svg>
       </div>
       </div>
     </article>

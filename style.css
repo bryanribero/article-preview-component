@@ -12,6 +12,7 @@ body{
     padding: 0;
     box-sizing: border-box;
     background-color: var(--light-grayish-blue);
+    font-family: 'Manrope', sans-serif;
 }
 main{
     display: flex;
@@ -27,6 +28,7 @@ article{
     color: black;
     border-radius: 6px;
     max-width: 310px;
+    box-shadow: 12px 12px 50px rgba(0, 0, 0, 0.196);
 }
  figure{
     width: 100%;
@@ -42,7 +44,7 @@ article{
     display: flex;
     flex-direction: column;
     gap: 2rem;
-    padding: 3rem;
+    padding: 1.5rem 2.2rem;
  }
  .img-user{
     width: 40px;
@@ -53,6 +55,42 @@ article{
     height: 15px;
     object-fit: fill;
  }
+ .share{
+   color: var(--desaturated-dark-blue);
+   background-color: var(--light-grayish-blue);
+   padding: .7rem;
+   border-radius: 100%;
+ }
  .avatar-container{
     display: flex;
+    align-items: center;
+    justify-content: space-between;
  }
+.name-container{
+   display: flex;
+   gap: 1rem;
+}
+.span-container{
+   display: flex;
+   flex-direction: column;
+   gap: .2rem;
+}
+h1{
+   font-size: 1.2rem;
+   max-width: 18rem;
+   color: var(--very-dark-grayish-blue);
+   font-weight: 700;
+}
+p{
+   color: var(--very-dark-grayish-blue);
+   font-weight: 500;
+   max-width: 26rem;
+}
+.name-span{
+   font-weight: 700;
+   color: var(--very-dark-grayish-blue);
+}
+.date-span{
+   font-weight: 500;
+   color: var(--very-dark-grayish-blue);
+}
