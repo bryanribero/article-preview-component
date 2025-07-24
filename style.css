@@ -149,10 +149,10 @@ p{
       flex-direction: row;
       height: auto;
       align-items: stretch;
-      max-width: 620px;
+      max-width: 710px;
    }
 figure {
-  flex: 1.25;
+  flex: 1.55;
   height: auto; 
 }
 
@@ -166,11 +166,11 @@ figure img {
  .padding-style{
    flex: 2;
    height: 100%;
-   padding: 1.5rem 2rem 2rem 2rem;
+   padding: 1.5rem 3rem 2rem 2rem;
  }
  h1{
-   max-width: 24rem;
-   font-size: 1.3rem;
+   max-width: 27rem;
+   font-size: 1.5rem;
  }
  p{
    max-width: 28rem;
