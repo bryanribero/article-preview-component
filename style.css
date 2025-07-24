@@ -10,7 +10,6 @@ html{
 body{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
     background-color: var(--light-grayish-blue);
     font-family: 'Manrope', sans-serif;
 }
@@ -22,7 +21,7 @@ main{
     padding: 0rem 1rem;
 }
 article{
-   position: relative;
+    position: relative;
     display: flex;
     flex-direction: column;
     background-color: white;
@@ -119,7 +118,7 @@ p{
    bottom: -80px;
    gap: 1.25rem;
    z-index: 2;
-   transition: bottom .3s ease;
+   transition: all .3s ease;
 }
 #content-display.visible{
    bottom: 0px;
@@ -137,3 +136,73 @@ p{
    cursor: pointer;
 }
 
+@media(min-width:750px){
+   body{
+      position: relative;
+   }
+   main{
+      padding: 0;
+      min-height: 100vh;
+   }
+   article{
+      position: static;
+      flex-direction: row;
+      height: auto;
+      align-items: stretch;
+      max-width: 620px;
+   }
+figure {
+  flex: 1.25;
+  height: auto; 
+}
+
+figure img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  object-position: left;
+}
+ .padding-style{
+   flex: 2;
+   height: 100%;
+   padding: 1.5rem 2rem 2rem 2rem;
+ }
+ h1{
+   max-width: 24rem;
+   font-size: 1.3rem;
+ }
+ p{
+   max-width: 28rem;
+ }
+ #content-display{
+   justify-content: center; 
+   align-items: center;
+   border-radius: 8px;
+   width: 250px;
+   height: 50px;
+   bottom: auto;
+   gap: 1.25rem;
+   z-index: 2;
+   transition: transform 0.3s ease, opacity 0.3s ease;
+}
+#content-display::after{
+   content: "";
+   position: absolute;
+   bottom: -18px;
+   left: 50%;
+   transform: translateX(-50%);
+   border-width: 10px;
+   border-style: solid;
+   border-color: var(--very-dark-grayish-blue) transparent transparent transparent;
+}
+#content-display span{
+   margin-left: 0;
+}
+.icons img{
+   transition: all .2s ease;
+}
+.icons img:hover{
+   transform: translateY(-2px) scale(1.1);
+}
+}
