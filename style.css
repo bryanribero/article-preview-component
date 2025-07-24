@@ -186,6 +186,7 @@ figure img {
    bottom: auto;
    gap: 1.25rem;
    z-index: 2;
+   box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.151);
    transition: transform 0.3s ease, opacity 0.3s ease;
 }
 #content-display::after{
