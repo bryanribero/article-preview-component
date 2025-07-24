@@ -176,6 +176,8 @@ figure img {
    max-width: 28rem;
  }
  #content-display{
+   display: flex;
+   opacity: 0;
    justify-content: center; 
    align-items: center;
    border-radius: 8px;
